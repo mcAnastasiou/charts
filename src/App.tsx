@@ -1,24 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import LineApexcharts from "./charts/apexcharts/Line";
+import LineChartJS from "./charts/chartjs/Line";
+import LineHightcharts from "./charts/hightcharts/Line";
+import LineNivo from "./charts/nivo/Line";
+import LineRecharts from "./charts/recharts/Line";
+import LineVictory from "./charts/victory/Line";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>ChartJS</h2>
+      <div className="charts-container">
+        <div className="chart-container">
+          <LineChartJS />
+        </div>
+      </div>
+      <h2>Recharts</h2>
+      <div className="charts-container">
+        <div className="chart-container">
+          <LineRecharts />
+        </div>
+      </div>
+      <h2>Highcharts</h2>
+      <div className="charts-container">
+        <div className="chart-container">
+          <LineHightcharts />
+        </div>
+      </div>
+      <h2>Apexcharts</h2>
+      <div className="charts-container">
+        <div className="chart-container">
+          <LineApexcharts />
+        </div>
+      </div>
+      <h2>Victory</h2>
+      <div className="charts-container">
+        <div className="chart-container">
+          <LineVictory />
+        </div>
+      </div>
+      <h2>Nivo</h2>
+      <div className="charts-container">
+        <div className="chart-container-fixed">
+          <LineNivo />
+        </div>
+      </div>
     </div>
   );
 }

@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.charts-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.chart-container {
+  width: 40%;
+  height: auto;
+  min-height: 300px;
+}
+
+.chart-container-fixed {
+  width: 40%;
+  height: 200px;
+  min-height: 300px;
+}
